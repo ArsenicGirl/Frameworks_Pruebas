@@ -1,9 +1,14 @@
 <script>
 	export let name;
+
+	function handleClick(){
+		name = 'arroz';
+	}
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<h1>holis {name}!</h1>
+	<button on:click={handleClick}>Cambiar nombre</button>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
