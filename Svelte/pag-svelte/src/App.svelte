@@ -3,7 +3,7 @@
 	let internalCounter = contador; 
 
 	function handleClick(){
-		internalCounter++;
+		internalCounter +=1;
 	}
 </script>
 
