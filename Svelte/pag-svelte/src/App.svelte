@@ -1,15 +1,16 @@
 <script>
-	export let name;
+	export let contador = 0;
+	let internalCounter = contador; 
 
 	function handleClick(){
-		name = 'arroz';
+		internalCounter++;
 	}
 </script>
 
 <main>
-	<h1>holis {name}!</h1>
-	<button on:click={handleClick}>Cambiar nombre</button>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<!--<h1>holis {name}!</h1>-->
+	<button on:click={handleClick}>Incrementar</button>
+	<span>{internalCounter}</span>
 </main>
 
 <style>
@@ -20,7 +21,7 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	span {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
